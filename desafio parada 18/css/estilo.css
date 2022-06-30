@@ -1,0 +1,146 @@
+#main{
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #7A7E7A;
+    background-color: rgba(0, 0, 0, 0.767);
+    display:grid;
+			flex-wrap: wrap ;
+			flex-direction:column;
+}
+
+#header img{
+    width: 100%;
+   
+  
+    
+    
+}
+
+#topnav{
+    overflow: hidden;
+    display:flexbox;
+   background-color: azure;
+    display: flex;
+    border-top: 8px solid  #701319;
+    font-family: 'BankGothic Lt BT';
+    height: 45px;
+}
+#topnav a{
+    float: left;
+     display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#topnav a:hover{
+    background-color: #701319;
+    color: rgba(255, 255, 255, 0.644);
+    transition: 0.4s ;
+
+
+}
+.bb{
+
+   padding: 0px;
+    width: 33%;
+    margin: 10px;
+    line-height: 7px;
+
+    font-family: 'BankGothic Lt BT';77
+}
+
+.bb a{
+    text-decoration: none;
+}
+#nav img{
+    border-top: 8px solid  #000000;
+  width: 100%;
+}
+
+#container{
+    margin: 5px;
+    display: flex;
+}
+
+.article{
+    margin: 2px;
+   width: 60%;
+   text-align: justify;
+        font-family: 'BankGothic Lt BT';
+        color: white;
+        background-color:  #4564808f  ;
+        padding: 50px;
+       
+}
+.oo{
+    background-color:  #456480  ;
+    margin: 2px;
+    width: 40%;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    
+	
+    
+}
+
+.oo img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+
+
+#footer{
+    text-align:justify;
+    height: 100px;
+    margin: 10px;
+    line-height: 100px;
+    background-color: #FFBFA7;
+}
+
+.b{
+    margin: 10px;
+    width: auto;
+         font-family: 'BankGothic Lt BT';
+         color: white;
+         background-color:  #4564808f  ;
+         padding: 50px;
+
+}
+
+p{
+    color: white;
+    font-size: small;
+}
+
+.active{
+    
+  
+    border: 8px solid  #701319;
+    color: white ; 
+    background-color: 
+    #701319;
+}
+
+
+.hqs{
+    margin: 30px;
+}
+.hqs img{
+   width: 50%;
+   
+}
+
+#n{
+    font-family: 'BankGothic Lt BT';
+    font-size: 20;
+}
