@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let voto = 4
+     let Ines_Brasil = 0
+     let Gretchen = 0
+     let Anitta = 0
+     let Dora_Aventureira = 0
+     let B_N = 0
+
+     while(voto != 0){
+     voto = prompt("VOTE PARA PRESIDENTE DO BRASIL \n 1 - Ines Brasil \n 2 - Gretchen  \n 3 - Anitta \n 4 - Dora Aventureira  \n b - Voto e branco \n n - nulo \n \n 0 - sair");
+     voto = voto.toLocaleLowerCase() 
+       switch(voto){
+
+        case "1" :
+            alert("voce votou em Ines Brasil");
+            Ines_Brasil++
+            break;
+
+            case "2" : 
+            alert("voce votou em Gretchen");
+            Gretchen++
+            break;
+
+            case "3":
+            alert("voce votou em Anitta");
+            Anitta++
+            break;
+
+            case "4":
+            alert("voce votou em Dora Aventureira");
+            Dora_Aventureira++
+            break;
+
+            case "b":
+            alert("voce votou em Branco");
+            B_N++
+            break;
+
+            case "n":
+            alert("voce votou Nulo");
+            B_N++
+            break;
+
+            case "0":
+            alert(`VOTAÇÃO ENCERRADA \n \n NUMERO DE VOTOS \n \n Ines Brasil : ${Ines_Brasil} \n  Gretchen: ${Gretchen} \n  Anitta : ${Anitta} \n  Dora Aventureira : ${Dora_Aventureira} \n  Branco ou Nulo: ${B_N}`);
+            break;
+
+            default:
+            alert("!!!escolha uma opção valida!!!");
+            break;  
+       }
+            
+     }
+
+       
+        
+    
+    </script>
+    
+</body>
+</html>
