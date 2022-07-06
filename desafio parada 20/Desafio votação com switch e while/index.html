@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Eleições 2022</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="main">
+            <h1>Eleições 2022</h1>
+
+            <div id="joaocontent"></div>
+            <div id="pedrocontent"></div>
+            <div id="mariacontent"></div>
+            <div id="thalitacontent"></div>
+            <div id="nulocontent"></div>
+        </div>
+
+        <script>
+            let votos= "";
+            let cont= 1;
+            let joao= [];
+            let pedro= [];
+            let maria= [];
+            let thalita= [];
+            let nulo= [];
+
+            var jodiv= document.getElementById("joaocontent")
+
+            while(cont >= 1){
+              votos= prompt("Digite seu voto ou digite 'sair' para sair da votação");
+              cont++;
+
+              if (votos == 'sair'){
+                cont= 0;
+              }
+
+              switch (votos){
+                case 'joao':
+                  joao.push(1);
+                  break;
+                case 'pedro':
+                  pedro.push(1);
+                  break;
+                case 'maria':
+                  maria.push(1);
+                  break;
+                case 'thalita': 
+                  thalita.push(1);
+                  break;
+                case 'nulo':
+                  nulo.push(1);   
+                  break;
+                }
+             }
+             document.getElementById('joaocontent').innerHTML= "<h2>" + "O candidato João teve " + joao.length + " voto(s)" + "</h2>";
+             document.getElementById('pedrocontent').innerHTML= "<h2>" + "O candidato Pedro teve " + pedro.length + " voto(s)" + "</h2>";
+             document.getElementById('mariacontent').innerHTML= "<h2>" + "A candidata Maria teve " + maria.length + " voto(s)" + "</h2>"; 
+             document.getElementById('thalitacontent').innerHTML= "<h2>" + "A candidata Thalita teve " + thalita.length + " voto(s)" + "</h2>";
+             document.getElementById('nulocontent').innerHTML= "<h2>" + "Tiveram " + nulo.length + " voto(s) nulo(s)" + "</h2>";
+        </script>
+
+    </body>
+</html>
