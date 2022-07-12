@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--nao consegui usar 3 functions-->
+    <div class="main">
+        <h2>ESCOLHA UMA SERIE</h2>
+
+        <button class="cell" onclick="quiz(item= 1)">Stranger Things</button>
+        <button class="pc" onclick="quiz(item= 2)">The Umbrela Academy</button>
+        <button class="cam" onclick="quiz(item= 3)">La Casa de Papel</button> 
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+    </div>
+
+
+    <script>
+          const jogador = prompt("Qual é seu nome?")
+        let op = 10 //opcao 
+        let cont = 0 // contador
+        let pontuacao = 0
+        let resposta
+        quiz(item);
+
+    function quiz(item){
+         switch(item){
+             case 1:
+             resposta = prompt("A personagem 011 ama Waffles? \n v - verdadeiro       f - falso")
+                    if(resposta == "v"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    resposta = prompt("A primeira temporada se passa na Australia \n v - verdadeiro       f - falso")
+                    if(resposta == "f"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    resposta = prompt("O mike ja foi pera o mundo invertido \n v - verdadeiro       f - falso")
+                    if(resposta == "f"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    alert(`${jogador} sua pontuação é ${pontuacao}`);
+                    pontuacao = 0
+                break
+             case 2:
+                    resposta = prompt("Eram 6 crianças sobrneturais \n v - verdadeiro       f - falso")
+                    if(resposta == "f"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    resposta = prompt("O 05 corre tao rapido que viaja no tempo \n v - verdadeiro       f - falso")
+                    if(resposta == "f"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    resposta = prompt("Vania sempre foi a irma mais forte \n v - verdadeiro       f - falso")
+                    if(resposta == "v"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    alert(`${jogador} sua pontuação é ${pontuacao}`);
+                    pontuacao = 0
+                break
+             case 3:
+             resposta = prompt("Cada integrante tinha um nome de um Pais \n v - verdadeiro       f - falso")
+                    if(resposta == "f"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    resposta = prompt("É uma serie Europeia \n v - verdadeiro       f - falso")
+                    if(resposta == "v"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    resposta = prompt("A serie teve um reboot Coreano \n v - verdadeiro       f - falso")
+                    if(resposta == "v"){
+                        pontuacao++
+                    }else{
+                        alert("resposta incorreta")
+                        
+                    }
+
+                    alert(`${jogador} sua pontuação é ${pontuacao}`);
+                    pontuacao = 0
+                break
+  }
+
+}
+
+
+    </script>
+</body>
+</html>
