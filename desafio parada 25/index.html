@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lavender;
+        }
+        .main{
+            margin: auto;
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            margin-top: 5%;
+        }
+        button{
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            display: inline-flex;
+            justify-content: space-around;
+            cursor: pointer; /* efeito da mãozinha quando passa o mouse */
+            border: 3px black solid;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       
+        <button>Clique Aqui</button>
+    </div>
+    
+    <script>
+        var usuarios = ["Kaio", "Vinicius", "joão", "Rodrigo", "Leia"]
+       
+        var btn = document.querySelector('button'); 
+
+        btn.onclick = function pessoal(usuarios){
+            let aleatorio = Math.floor(Math.random() * 5) + 1; 
+            switch(aleatorio){
+                case 1:
+                    return usuarios[0]
+                break
+                case 2:
+                    return usuarios[1]
+                break
+                case 3:
+                    return usuarios[2]
+                break
+                case 4:
+                    return usuarios[3]
+                break
+                case 5:
+                    return usuarios[4]
+                break
+            }
+        }
+//peço desculpas pelo atraso e por nao ter concluido o execicio de forma correta. eu estava com muitas duvidas 
+    </script>
+    
+</body>
+</html>
